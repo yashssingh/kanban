@@ -1,0 +1,88 @@
+.board {
+    min-width: 390px;
+    padding: 5px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .board_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    text-transform: capitalize;
+  }
+  .board_top_name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .board_top_name p {
+    font-weight: 500;
+  }
+  .board_top_name span {
+    color: gray;
+  }
+  .board_top_name svg {
+    height: 15px;
+    width: 15px;
+  }
+  .board_top_options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0.5;
+    transition: 200ms;
+  }
+  .board_top:hover .board_top_options {
+    opacity: 1;
+  }
+  .board_top_options svg {
+    height: 20px;
+    width: 20px;
+    color: grey;
+    transition: 200ms;
+  }
+  .board_top_options svg:hover {
+    color: black;
+  }
+  .board_container {
+    overflow-y: auto;
+    height: 75vh;
+  }
+  .add-ticket-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between form elements */
+    margin: 10px 0; /* Margin above and below the form */
+    padding: 15px; /* Padding inside the form */
+    background-color: #f8f8fa; /* Light background color */
+    border: 1px solid #dfe1e4; /* Border around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px; /* Subtle shadow for depth */
+}
+
+.add-ticket-form input,
+.add-ticket-form select {
+    padding: 10px; /* Padding inside the input and select */
+    border: 1px solid #dfe1e4; /* Border for input and select */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+}
+
+.add-ticket-form button {
+    padding: 10px; /* Padding for the button */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.add-ticket-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+  
